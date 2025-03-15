@@ -1,8 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 :root{
     --primary-color: #FE6933;
+    --white-color:#FFFFFF;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
 }
+
+body{
+    background-color: #fffcfb;
+}
+
+
+/* faq start */
+.faq-section-start .faq-section {
+    padding: 100px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.faq-section-start {
+    margin-top: 80px;
+    padding: 100px;
+}
+
+/* .faq-section-start .faq-section {
+    max-width: 100%;
+    padding: 50px 20px;
+    margin: auto;
+    padding: 100px;
+} */
+
+.faq-section-start .faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.faq-section-start .faq-header-pargraph {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navbar-secondary-color);
+}
+
+.faq-section-start .accordion-item {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-section-start .accordion-button {
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navbar-primary-color);
+    box-shadow: none !important;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.faq-section-start .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    font-size: 18px;
+    font-weight: 400;
+    color: #404040;
+}
+
+.faq-section-start .accordion-body {
+    font-size: 16px;
+    color: #555;
+    padding: 15px;
+}
+
+.faq-section-start .accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    padding: 2px;
+    color: var(--primary-color);
+    background-color: #E5EBE6;
+    border-radius: 50%;
+}
+
+.faq-section-start .accordion-button:not(.collapsed)::after {
+    content: "\f068";
+    transform: rotate(180deg);
+}
+
+.faq-section-start .accordion-button::after {
+    background-image: none;
+}
+
+.faq-section-start .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+}
+
+.accordion-button:hover {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 1024px) {
+    .faq-section-start {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .faq-section-start .faq-header {
+        font-size: 42px;
+    }
+
+    .faq-section-start .faq-header-pargraph {
+        font-size: 16px;
+    }
+
+    .faq-section-start .accordion-button {
+        font-size: 16px;
+    }
+
+    .faq-section-start .accordion-body {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .faq-section-start .faq-section {
+        padding: 60px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .faq-section-start {
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .faq-section-start .faq-header {
+        font-size: 32px; /* Adjusted for mobile */
+    }
+
+    .faq-section-start .faq-header-pargraph {
+        font-size: 14px;
+    }
+
+    .faq-section-start .accordion-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .faq-section-start .accordion-body {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .faq-section-start .faq-section {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-section-start .faq-header {
+        font-size: 28px;
+    }
+
+    .faq-section-start .faq-header-pargraph {
+        font-size: 13px;
+    }
+
+    .faq-section-start .accordion-button {
+        font-size: 13px;
+    }
+
+    .faq-section-start .accordion-body {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .faq-section-start {
+        padding: 0;
+    }
+}
+/* faq end */
+
+/* community start */
+#join-community {
+    padding: 80px 0;
+}
+
+#join-community .header{
+    font-size: 56px;
+    font-weight: 500 ;
+    color: #171717;
+}
+#join-community .paragraph{
+    font-size: 18px;
+    font-weight: 400 ;
+    color: #535862;
+}
+.testimonial {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-card {
+    background: #F3F7FF;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: -10px;
+}
+
+.star-icons {
+    font-size: 18px;
+    color: #FFAA00;
+    margin: 5px 0;
+}
+
+.star-rating {
+    color: #4382FF;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.review-card .text-muted {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.review-card .btn-orange {
+    background: #FF5A3C;
+    color: white;
+    border-radius: 40px;
+    width: 300px;
+    max-height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+.opacity-75 {
+    opacity: 0.75;
+}
+/* community end */
+
+/* about start */
+#about-section {
+    background-color: #1B1B1B;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 15px;
+    max-width: 1216px;
+    max-height: auto;
+    margin: 50px auto;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+#about-section::before {
+    content: "";
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+    background: url('https://cdn-sprites.flaticon.com/families/4_subhome_card.jpg') no-repeat center/contain;
+    opacity: 0.5;
+}
+
+#about-section::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+    background: url('https://cdn-sprites.flaticon.com/families/4_subhome_card.jpg') no-repeat center/contain;
+    opacity: 0.5;
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn-orange {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-outline-light {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+#about-section .text-section .title{
+    font-size: 56px;
+    font-weight:500;
+}
+
+#about-section .text-section .subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+@media (max-width: 768px) {
+    #about-section {
+        padding: 40px 15px;
+        margin: 30px auto;
+    }
+    #about-section::before, #about-section::after {
+        width: 80px;
+        height: 80px;
+        opacity: 0.3;
+    }
+}
+
+/* about end */
+
+/* footer start */
+.footer {
+    background-color: var(--white-color);
+    padding: 40px 0;
+}
+
+.footer .social-icons a {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #737373;
+    transition: 0.3s;
+    padding: 8px;
+    border-radius: 50%;
+    background: #F3F7FF;
+}
+
+.footer .social-icons a:hover {
+    color: #ff6600;
+}
+
+.footer .email-section {
+    display: flex;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.footer .email-input {
+    flex-grow: 1;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.footer .btn-orange {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer .btn-orange:hover {
+    background-color: #e65c00;
+}
+
+.footer hr {
+    border-top: 2px solid #ff6600; 
+    margin: 20px 0;
+}
+
+.footer .list-unstyled {
+    padding: 0;
+    margin: 0;
+}
+
+.footer .list-unstyled li {
+    padding: 3px 0;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+.footer .email-section {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.footer .email-input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.footer .btn-getstrt {
+    background-color: var(--primary-color);
+    height: 40px;
+    width: 120px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: -20px;
+}
+
+.footer .btn-getstrt:hover {
+    background-color: #e65c00;
+}
+/* footer end */
