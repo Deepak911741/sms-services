@@ -8,13 +8,584 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'Inter', sans-serif;
 }
 
 body{
     background-color: #fffcfb;
+    font-family: 'Inter', sans-serif;
 }
 
+/* navbar section start */
+.navbar {
+    padding: 15px 20px;
+    background: white;
+}
+
+.navbar-brand img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 400;
+}
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.btn-login:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-get-started {
+    background: var(--primary-color);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-get-started:hover {
+    background: var(--primary-color);
+}   
+/* navbar section end */
+
+.text-content h1 {
+    font-size: 60px;
+    font-size: 500;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 15px;
+}
+
+.signup-btn {
+    background-color: #FF6B3D;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.contact-btn {
+    border-color: #FF6B3D;
+    color: #FF6B3D;
+    padding: 12px 24px;
+    border-radius: 30px;
+}
+
+.world-map {
+    max-width: 100%;
+}
+
+.annotation {
+    position: absolute;
+    background: white;
+    padding: 10px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    width: 130px;
+    font-size: 14px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.annotation-1::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+
+.annotation-1::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #1B356A;
+    border-radius: 50%;
+    top: 50%;
+    right: -45px;
+    transform: translateY(-50%);
+}
+
+.annotation-2::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+}
+
+.annotation-2::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FF6B3D;
+    border-radius: 50%;
+    top: 50%;
+    left: -45px;
+    transform: translateY(-50%);
+}
+
+.annotation .badge{
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.annotation p {
+    font-size: 8px;
+    margin: 5px 0 0;
+}
+
+.annotation-1 {
+    top: 18%;
+    left: 20%;
+}
+
+.annotation-2 {
+    bottom: 28%;
+    left: 40%;
+}
+
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .annotation {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .annotation-1 {
+        left: 50%;
+    }
+
+    .annotation-2 {
+        left: 30%;
+    }
+}
+/* header section end */
+
+/* choose sms section start */
+#choose-sms-bulk .bulk-container {
+    background-color: #171717;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+#choose-sms-bulk .text-content{
+    width: 360px;
+    height: 212px;
+}
+#choose-sms-bulk .text-content h2 {
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+#choose-sms-bulk .text-content p {
+    font-size: 18px;
+    color: #FAFAFA;
+    font-weight: 400;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    width: 100%; 
+    height: 100%; 
+    max-width: 251px; 
+    max-height: 243px; 
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px; 
+}
+
+.feature-card .icon {
+    width: 80px;
+    height: 80px;
+    background-color: #FFF0EB;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.feature-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+/* choose sms section end */
+
+/* sms provider section start */
+#sms-provider .header {
+    font-size: 70px;
+    font-weight: 500;
+    color: #171717;
+}
+
+#sms-provider .paragraph {
+    color: #404040;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.sms-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(180, 180, 180, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sms-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.sms-card .icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFF0EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sms-card .icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.sms-card h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.sms-card p {
+    font-size: 16px;
+    color: #404040;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.sms-card a {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sms-card a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    #sms-provider .header {
+        font-size: 30px;
+    }
+
+    #sms-provider .paragraph {
+        font-size: 16px;
+    }
+
+    .sms-card {
+        padding: 15px;
+    }
+
+    .sms-card h4 {
+        font-size: 18px;
+    }
+
+    .sms-card p {
+        font-size: 14px;
+    }
+}
+/* sms provider section end */
+
+/* pricing-plan section start */
+ #pricing-plan{
+    background-color: #FFFFFF;
+}
+
+#pricing-plan .header {
+    font-size: 56px;
+    font-weight: 500;
+    color: #171717;
+}
+
+#pricing-plan .paragraph {
+    color: #404040;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#pricing-plan .billing {
+    max-width: 480px;
+    width: 100%; 
+    height: 50px;
+    background-color: #E9EAEB;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#pricing-plan .billing-option {
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+#pricing-plan .billing-option.active {
+    background-color: white;
+    border-radius: 6px;
+}
+
+#pricing-plan .save-text {
+    color: #FE6933;
+}
+
+@media (max-width: 768px) {
+    #pricing-plan .billing {
+        max-width: 320px; 
+        height: 45px; 
+    }
+
+    #pricing-plan .billing-option {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+.pricing-card {
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.professional-card {
+    background-color: #171717;
+    color: white;
+}
+
+.plan-title {
+    font-size: 16px;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+
+.professional {
+    color: white;
+}
+
+.teams {
+    color: #FE6933;
+}
+
+.price {
+    font-size: 32px;
+    font-size: 500;
+    text-align: left;
+}
+
+.plan-desc {
+    font-size: 16px;
+    color: #404040;
+    text-align: left;
+}
+
+.trial-btn {
+    background-color: #FFF0EB;
+    color: #343434;
+    border: none;
+    width: 100%;
+    max-width: 315px; 
+    height: 48px;
+    border-radius: 24px;
+    margin: 10px auto;
+    display: block; 
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .trial-btn {
+        max-width: 250px; 
+        height: 44px; 
+        font-size: 14px;
+    }
+}
+
+.trial-btn:hover{
+    background-color: #FFF0EB;
+    color: #343434;
+    border: none;
+}
+
+.professional-btn {
+    background-color: var(--primary-color);
+}
+.professional-btn:hover{
+    background-color: var(--primary-color);
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.features .fa-check{
+    color: var(--primary-color);
+    padding: 6px;
+    background-color: #F9F5FF;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.features li {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .billing {
+        width: 280px;
+    }
+
+    .pricing-card {
+        margin-bottom: 20px;
+    }
+}
+/* pricing-plan section end */
+
+/* netwok section start */
+#networks {
+    padding: 60px 0;
+}
+
+.networks-section {
+    position: relative;
+}
+
+#networks .networks-section .paragraph{
+    color: #535862;
+    font-size: 20px;
+    width: 400;
+}
+
+.map-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.map-container img {
+    width: 100%;
+    max-height: 738px;
+}
+
+.country-label {
+    position: absolute;
+    background: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+#networks .networks-section .header{
+    color: #171717;
+    font-weight: 500;
+    font-size: 56px;
+}
+
+@media (max-width: 768px) {
+    .country-label {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+/* netwok section end */
 
 /* faq start */
 .faq-section-start .faq-section {
@@ -28,13 +599,6 @@ body{
     margin-top: 80px;
     padding: 100px;
 }
-
-/* .faq-section-start .faq-section {
-    max-width: 100%;
-    padding: 50px 20px;
-    margin: auto;
-    padding: 100px;
-} */
 
 .faq-section-start .faq-header {
     text-align: center;
@@ -147,7 +711,7 @@ body{
     }
 
     .faq-section-start .faq-header {
-        font-size: 32px; /* Adjusted for mobile */
+        font-size: 32px;
     }
 
     .faq-section-start .faq-header-pargraph {
@@ -202,23 +766,27 @@ body{
     font-weight: 500 ;
     color: #171717;
 }
+
 #join-community .paragraph{
     font-size: 18px;
     font-weight: 400 ;
     color: #535862;
 }
+
 .testimonial {
     background: #fafafa;
     border-radius: 12px;
     padding: 20px;
     transition: all 0.3s ease;
 }
+
 .testimonial img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .review-card {
     background: #F3F7FF;
     padding: 30px;
@@ -373,7 +941,6 @@ body{
         opacity: 0.3;
     }
 }
-
 /* about end */
 
 /* footer start */
@@ -437,7 +1004,6 @@ body{
     font-size: 16px;
     margin: 5px 0;
 }
-
 
 .footer .email-section {
     display: flex;
